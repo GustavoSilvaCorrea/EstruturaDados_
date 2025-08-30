@@ -1,0 +1,13 @@
+Fracoes: 
+10 / 45 - 59 / 14
+Simplificacao: 
+2 / 9 - 59 / 14
+Soma de Fracoes: 
+559 / 126
+Subtracao de Fracoes: 
+-503 / 126
+Multiplicacao de Fracoes: 
+59 / 63
+Divisao de Fracoes: 
+28 / 531
+
