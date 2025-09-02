@@ -6,10 +6,7 @@
 
 int main(){
     Time* Tabela = LerDados("tabela.csv");
-    for (int i = 0; i < 20; i++)
-    {
-        printf("%d\t%.2f\t%s\n", Tabela[i].posicao, Tabela[i].aproveitamento, Tabela[i].equipe);
-    }
-    
+        printf("%d\n", getPontos(Tabela, 20));
+        printf("%.2f%%\n", getAproveitamento(Tabela, "Palmeiras"));
     return 0;
 }

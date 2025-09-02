@@ -38,3 +38,21 @@ Time *LerDados(char *Arquivo)
     fclose(fp);
     return X;
 }
+
+int getPontos(Time* T, int posicao){
+    int i;
+    for (i = 0; i < 20; i++)
+        if(T[i].posicao == posicao)
+            return T[i].pts;
+    
+    return ERRO;
+}
+
+float getAproveitamento(Time* T, char* equipe){
+    int i;
+    for (i = 0; i < 20; i++)
+        if(strcmp(T[i].equipe, equipe) == 0)
+        return T[i].aproveitamento;
+
+    return ERRO;
+}
