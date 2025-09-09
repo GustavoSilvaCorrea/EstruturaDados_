@@ -22,5 +22,6 @@ typedef struct
 Time* LerDados(char* Arquivo);
 int getPontos(Time* T, int posicao);
 float getAproveitamento(Time* T, char* equipe);
+void InsertionSort(Time *V, int N);
 
 #endif

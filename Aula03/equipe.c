@@ -56,3 +56,23 @@ float getAproveitamento(Time* T, char* equipe){
 
     return ERRO;
 }
+
+void InsertionSort(Time  *V, int N){
+    Time Chave; // Elemento que será inserido na parte ordenada
+    int i; // Posição (ou coordenada) do elemento chave
+    int j; // Posição de elemento da "parte ordenada" que será comparada com a Chave
+
+    for (i = 1; i < N; i++)
+    {
+        Chave = V[i];
+        j = i - 1;
+
+
+        while (j >= 0 && strcmp(V[j].equipe, Chave.equipe) > 0)
+        {
+            V[j + 1] = V[j];
+            j--;   
+        }
+        V[j + 1] = Chave; // Copiando o Chave no ultimo logar modificado 
+    } 
+}
